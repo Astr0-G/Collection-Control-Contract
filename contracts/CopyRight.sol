@@ -15,8 +15,9 @@ contract CopyRight is ERC721, Ownable {
     // Base URI
     string private _baseURIextended;
 
-    constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {
+    constructor(string memory _name, string memory _symbol, address owner) ERC721(_name, _symbol) {
         setAddress();
+        transferOwnership(owner);
     }
 
     function setAddress() private {

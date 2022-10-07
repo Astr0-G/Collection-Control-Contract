@@ -59,7 +59,7 @@ contract FinesseCratorNCR {
     {
         address newContractAddress;
         address creator;
-        NCR = new NonCopyRight(_name);
+        NCR = new NonCopyRight(_name,crator);
         newContractAddress = NCR.NonCopyRightContractAddress();
         creator = crator;
         s_creatorCollection[crator].numOfCollectionCreated++;

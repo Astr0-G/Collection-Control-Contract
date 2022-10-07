@@ -64,7 +64,7 @@ contract FinesseCratorCR {
     {
         address newContractAddress;
         address creator;
-        CR = new CopyRight(_name, _symbol);
+        CR = new CopyRight(_name, _symbol,crator);
         newContractAddress = CR.CopyRightContractAddress();
         creator = crator;
         s_creatorCollection[crator].numOfCollectionCreated++;
